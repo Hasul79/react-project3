@@ -69,7 +69,14 @@
       color: white;
       font-size: 25px;
       border: none;
+	  transition: 0.5s;
   }
+    button:hover {
+		background-color: rgba(178, 175, 175, 0.942);
+		color:rgba(49, 48, 48, 0.734);
+		cursor: pointer;
+		
+	}
   .login-button{
       padding-top: 25px;
   }

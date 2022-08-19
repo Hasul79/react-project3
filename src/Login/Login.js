@@ -23,14 +23,14 @@ function Login() {
            </div>
            <div className="second-input">
              <img src={pass} alt="pass" className="email"/>
-             <input type="password" placeholder="user name" className="name"/>
+             <input type="password" placeholder="password" className="name"/>
            </div>
           <div className="login-button">
           <button>Login</button>
           </div>
            
             <p className="link">
-              <a href="#">Forgot password ?</a> Or<a href="#">Sign Up</a>
+              <a href="#">Forgot password ?</a>   Or  <a href="#">Sign Up</a>
             </p>
            
  
