@@ -1,4 +1,55 @@
-.aaa{
-    background-color: #2AFF0E;
-    padding: 1%;
-  }
+.wrapper{
+  width: 100%;
+  display: flex;
+  /* justify-content - հատկությունը սահմանում է, թե ինչպես է բրաուզերը տարածությունը բաշխում բովանդակության տարրերի միջև, center-ը տեղափոխում է կենտրոն*/
+  justify-content: center;
+}
+.wrapper-content{
+  display: flex;
+  /* եթե ունենք օրինակ 4 հատ քառակուսի,space-between-ը էկրանի լայնքը բաժանում է հավասար մասերի և միմյանցից հավասար հեռավորության վրա տեղադրում է այդ 4 քառակուսիները ամբողջ էկրանի լայնքով */
+  justify-content: space-between;
+  width: 700px;
+}
+
+form{
+  display: flex;
+  /* եթե ունենք օրինակ 4 հատ քառակուսի,flex-direction: column-ը ձախ վերևից սյունյակաձև տեղադրում է այդ քառակուսիները */
+  flex-direction: column;
+}
+input{
+  padding: 5px;
+  margin:5px 0;
+}
+.buttons-wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+}
+button{
+  width: 70px;
+}
+
+table{
+  width: 100%;
+  /* border-collapse: collapse-ը սահմանում է որ աղյուսակի բոլոր գծային սահմանները լինեն ընդհանուր, իսկ border-collapse: separate-ի դեպքում յուրաքանչյուր ուղանկյուն առանձնանում է որոշակի տարածությամբ մյուս ուղանկյուններից */
+  border-collapse: collapse;
+  border: 1px solid grey;
+}
+
+th{
+  min-width: 100px;
+  border: 1px solid gray;
+  text-align: left;
+  padding: 5px;
+  background-color: rgb(61, 121, 233);
+}
+/* :first-child այս կոնցեպտը նրա համար է որպեսզի որոշակի առանձնահատկություն տա ծնողի առաջին երեխային(child),
+տվյալ դեպքում որոշակի յուրահատուկ պարամետրեր է տրվում th-ի առաջին երեխային */
+th:first-child{
+  min-width: 20px;
+}
+
+
+
+

@@ -16,9 +16,9 @@ function ArmenMarTable(){
 const[userData,setUserData]=useState(initialValues)
 
   return (
-    <div>
-      <div>
-        <div>
+    <div className="wrapper">
+      <div className="wrapper-content">
+        <div className="table-data">
           <table>
           {/* table-ի սյուներ */}
             <th>#</th>
@@ -36,10 +36,25 @@ const[userData,setUserData]=useState(initialValues)
         <div>
           {/* form-ը նրա համար է որտեղ ավելացվելու են user-ները  */}
           <form>
-            <input placeholder="Write your name"/>
-            <input placeholder="Write your surname"/>
-            <input placeholder="Write your salary"/>
-            <div>
+          onChange-ի միջոցով ստանում ենք input-ում կատարվող փոփոխությունները,  
+            <input placeholder="Write your name" onChange={(e)=>setUserData((prevState)=>({
+              ...prevState,
+              userName: e.target.value
+            }))}
+            />
+            <input placeholder="Write your surname"
+            onChange={(e)=>setUserData((prevState)=>({
+              ...prevState,
+              userSurname: e.target.value
+            }))}
+            />
+            <input placeholder="Write your salary"
+            onChange={(e)=>setUserData((prevState)=>({
+              ...prevState,
+              userSalary: e.target.value
+            }))}
+            />
+            <div className="buttons-wrapper">
             {/* մաքրող կնոպկա */}
               <button type="reset">Clean</button>
             {/* ավելացնող կնոպկա */}
