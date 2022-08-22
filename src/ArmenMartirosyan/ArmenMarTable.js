@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import React, {useState} from "react";
 import "./ArmenMarTable.css";
 
@@ -36,7 +36,7 @@ const[userData,setUserData]=useState(initialValues)
         <div>
           {/* form-ը նրա համար է որտեղ ավելացվելու են user-ները  */}
           <form>
-          onChange-ի միջոցով ստանում ենք input-ում կատարվող փոփոխությունները,  
+          {/* onChange-ի միջոցով ստանում ենք input-ում կատարվող փոփոխությունները,   */}
             <input placeholder="Write your name" onChange={(e)=>setUserData((prevState)=>({
               ...prevState,
               userName: e.target.value
