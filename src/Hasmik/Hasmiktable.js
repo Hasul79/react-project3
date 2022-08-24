@@ -1,5 +1,5 @@
 function Hasmiktable(){
-	<p>HELLO</p>
+	<p>HELLO Worldddd</p>
 }
 
 export default Hasmiktable
