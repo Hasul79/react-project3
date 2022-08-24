@@ -1,5 +1,4 @@
-function Hasmiktable(){
-	<p>HELLO Worldddd</p>
+function HasmikTable(){
+  
 }
-
-export default Hasmiktable
+export default HasmikTable

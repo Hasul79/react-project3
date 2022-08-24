@@ -6,6 +6,8 @@ import Table from "./Armengh/Table";
 import Hasmiktable from './Hasmik/Hasmiktable';
 
 
+
+
     
 
 function App() { 
