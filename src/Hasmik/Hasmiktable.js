@@ -1,3 +1,3 @@
-function Hasmiktable(){
-	
+function HasmikTable(){
+  
 }
