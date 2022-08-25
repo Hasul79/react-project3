@@ -1,4 +1,5 @@
-function HasmikTable(){
-  
+function Hasmiktable(){
+
 }
-export default HasmikTable
+
+export default Hasmiktable
