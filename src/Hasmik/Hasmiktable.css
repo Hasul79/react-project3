@@ -1,7 +1,19 @@
+body{
+	background: url(./image/kapan.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
 *{
 	margin:0;
-	padding: 5px;
+	padding: 0;
+	
 }
+.profile {
+    height: 100px;
+    width: 100px;
+    border-radius: 130px;
+  } 
 .wrapper{
 	width: 100%;
 	display: flex;
@@ -9,16 +21,24 @@
 }
 .wrapper-content {
 	display: flex;
-	justify-content: space-between;
-	width: 900px;
+	justify-content: space-evenly;
+	width: 1100px;
 }
 form{
 	display: flex;
 	flex-direction: column;
 }
+span{
+	font-size: 30px;
+	text-align: center;
+}
 input {
-	padding: 5px;
+	padding: 8px;
 	margin: 5px 0;
+	text-align: left;
+	background-color: rgba(203, 163, 240, 0.8);
+	color: black;
+	font-size: 30px;
 }
 
 .buttons-wrapper {
@@ -28,20 +48,29 @@ input {
 	margin: 10px 0;
 }
 button {
-	width: 150px;
+	width: 130px;
+	background: blueviolet;
+	margin:0 10px;
 }
 table {
 	width: 100%;
 	border-collapse: collapse;
-	border: 1px solid black;
+	border: 1px solid white;
+	color: white;
 }
 th {
-	min-width: 200px;
-	border: 1px solid black;
-	text-align: left;
+	min-width: 100px;
+	border: 1px solid white;
+	text-align: center;
 	padding: 5px;
-	background-color: rgb(182, 126, 235);
+	background-color: rgba(203, 163, 240, 0.8);
+	color: white;
+	font-size: 20px;
 }
 th:first-child {
-min-width: 20px;
+   min-width: 20px;
+}
+td {
+	border: 1px solid white;
+	padding: 5px;
 }
