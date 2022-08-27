@@ -4,7 +4,9 @@
     display: flex; 
     padding-top: 90px;
     padding-bottom: 90px;
-    background-color: #e1e3eb;
+    background-image: url(../image/2a4a826b756d92121433f703d73dc7e0.jpg);
+    background-size: cover;
+  background-repeat: no-repeat;
   }
   .sub-main {
     display: flex;
@@ -40,10 +42,10 @@
       width: 300px;
       height: 50px;
       border-radius: 60px;
-      box-shadow: inset 0px 0px 25px 0px #888;
+      box-shadow: inset 0px 0px 25px 0px rgb(98, 132, 166);
       border: none;
       outline: none;
-      background-color: #fff;
+      background-color: white
   }
 
   .email{
@@ -65,15 +67,17 @@
       width: 380px;
       height: 50px;
       border-radius: 60px;
-      background-color: rgba(49, 48, 48, 0.734);
+      background-color: rgba(106, 142, 176, 0.921);
       color: white;
       font-size: 25px;
       border: none;
 	  transition: 0.5s;
   }
     button:hover {
-		background-color: rgba(178, 175, 175, 0.942);
-		color:rgba(49, 48, 48, 0.734);
+		background-color: rgba(174, 192, 243, 0.942);
+		color:rgba(15, 126, 229, 0.921);
+    box-shadow: 0 0 20px rgba(5, 52, 95, 0.921),
+              0 0 40px rgba(2, 18, 33, 0.921);;
 		cursor: pointer;
 		
 	}
@@ -86,5 +90,5 @@
       font-weight: 400;
   }
    a{
-       color: blue;
+       color: rgba(15, 126, 229, 0.921);;
    }
