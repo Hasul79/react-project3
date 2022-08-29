@@ -2,8 +2,6 @@ import './Login.css';
 import profile from "./../image/a.jpg";
 import email from "./../image/email.jpg";
 import pass from "./../image/pass.png";
-
-// import { Link } from "react-router-dom";
 import {useState} from "react"
 import { useNavigate } from "react-router-dom";
 
@@ -90,7 +88,7 @@ function Login() {
            </div>
           <div className="login-button">
 
-      
+
           <button className='check' onClick={Parol}>Login</button>
         
 

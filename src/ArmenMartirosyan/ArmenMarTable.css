@@ -1,115 +1,127 @@
-body{
-  background: url("https://t4.ftcdn.net/jpg/02/94/30/19/360_F_294301937_tIUl9X7ejlxa8G5FxhC9OROlXNkNS6XC.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-
-.wrapper{
-  width: 100%;
+.wrapper1 {
+  width: 80%;
   display: flex;
   /* justify-content - հատկությունը սահմանում է, թե ինչպես է բրաուզերը տարածությունը բաշխում բովանդակության տարրերի միջև, center-ը տեղափոխում է կենտրոն*/
   justify-content: center;
 }
-.wrapper-content{
+
+.wrapper-content1 {
   display: flex;
   /* եթե ունենք օրինակ 4 հատ քառակուսի,space-between-ը էկրանի լայնքը բաժանում է հավասար մասերի և միմյանցից հավասար հեռավորության վրա տեղադրում է այդ 4 քառակուսիները ամբողջ էկրանի լայնքով */
   justify-content: space-between;
-  width: 1100px;
+  width: 1200px;
 }
 
-form{
+.form1 {
   display: flex;
   /* եթե ունենք օրինակ 4 հատ քառակուսի,flex-direction: column-ը ձախ վերևից սյունյակաձև տեղադրում է այդ քառակուսիները */
   flex-direction: column;
 }
-.input{
-  padding: 1.5%;
-  margin: 1.5%  ;
-  text-align: center;
-  margin-left: 30%;
-  font-size:20px
-  
-}
- 
 
-.buttons-wrapper{
+.input1 {
+  width: 95%;
+  margin: 1.5%;
+  text-align: center;
+  margin-left: 85%;
+  font-size: 20px
+}
+
+.buttons-wrapper1 {
   display: flex;
   justify-content: space-between;
   width: 130%;
   margin: 2% 3%;
-}
-.butt1{
-  width: 37%;
-  background-color: #00FF42;
-  color: black;
-  margin-left: 21%;
+  margin-left: 60%;
 }
 
-.butt1:hover{
-  background: #FF0277;
+.butt1 {
+  width: 35%;
+  background-color: #00FF42;
+  color: black;
+  margin-left: 20%;
+}
+
+.butt1:hover {
+  background: blueviolet;
   color: white;
 }
 
-.butt2{
-  width: 37%;
+.butt2 {
+  width: 35%;
   background-color: #00FF42;
   color: black;
-  margin-right: 1%;
+  margin-right: 7%;
 }
 
-.butt2:hover{
-  background: #FF0277;
+.butt2:hover {
+  background: blueviolet;
   color: white;
 }
-table{
-  width: 127%;
+
+.table1 {
+  width: 110%;
   /* border-collapse: collapse-ը սահմանում է որ աղյուսակի բոլոր գծային սահմանները լինեն ընդհանուր, իսկ border-collapse: separate-ի դեպքում յուրաքանչյուր ուղանկյուն առանձնանում է որոշակի տարածությամբ մյուս ուղանկյուններից */
   border-collapse: collapse;
   border: 4px ridge #FFFF00;
-  margin-top: 0.7%;
-  font-size: 20px;
-  margin-left: -4%;
+  margin-top: 0.6%;
+  font-size: 18px;
+  margin-left: 25%;
 }
 
-th{
- 
+.th1 {
   border: 2px solid #FFFF00;
   text-align: center;
   padding: 10px 20px;
   background-color: #FF5BAD;
-  font-size: 20px;  
+  font-size: 18px;
 }
+
 /* :first-child այս կոնցեպտը նրա համար է որպեսզի որոշակի առանձնահատկություն տա ծնողի առաջին երեխային(child),
 տվյալ դեպքում որոշակի յուրահատուկ պարամետրեր է տրվում th-ի առաջին երեխային */
-th:first-child{
+.th1:first-child {
   min-width: 20px;
 }
-.edit-action{
+
+.edit-action1 {
   width: 35%;
   margin: 3%;
   background-color: #00FF42;
   color: black;
+  font-size: 20px;
+  border-radius: 40%;
+
 }
-.edit-action:hover{
+
+.edit-action1:hover {
   background: blueviolet;
   color: white;
 }
-.remove-action{
-  width: 55%;
+
+.remove-action1 {
+  width: 58%;
   background-color: #00FF42;
   color: black;
+  font-size: 20px;
 }
-.remove-action:hover{
+
+.remove-action1:hover {
   background: blueviolet;
   color: white;
 }
 
-td{
+.td1 {
   border: 2px ridge #FFFF00;
   text-align: center;
-  background-color: white;
-  
 }
 
+.home {
+  width: 50%;
+  margin-left: 108%;
+  background: yellow;
+  color: black;
+}
 
+.home:hover {
+  background: blueviolet;
+  color: white;
+}
