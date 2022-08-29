@@ -5,6 +5,7 @@ import profile from './image/njdeh2.jpg';
 const initialValues = {
 	userName: '',
 	userSurname: '',
+	userAge: '',
 	userSalary: ''
 }
 
@@ -14,13 +15,13 @@ function Hasmiktable(){
 	const [editableUserData, setEditableUserData] = useState({
 		isEdit: false,
 		userIndex: null
-	})
+	});
 
    const handleRemoveClick = (index) =>{
        setUsers(users.filter((user, userIndex) => userIndex !== index));
    }
 	
-	const isFilledFields = userData.userName && userData.userSurname && userData.userSalary
+	const isFilledFields = userData.userName && userData.userSurname && userData.userAge &&  userData.userSalary
 
 	const handleSubmitUser = (e) => {
        e.preventDefault();
@@ -48,11 +49,15 @@ function Hasmiktable(){
 
   const handleEditClick = (data, index) => {
 	setUserData(data);
-	
+	setEditableUserData({
+		isEdit: true,
+		userIndex: index
+	})
   }
 	console.log('userData ', userData);
 
 	return (
+<div className="body">
   <div className="wrapper">
 	<div className="wrapper-content">
 	   <div className="form-data">
@@ -61,22 +66,32 @@ function Hasmiktable(){
 			 </div>
 
 
-                <form onSubmit={handleSubmitUser} onReset={handleCleanClick}>
-					<input placeholder=" Write your name" 
+                <form className="forma" onSubmit={handleSubmitUser} onReset={handleCleanClick}>
+					<input className="input_name" placeholder=" Write your name" 
 					onChange={(e) => setUserData((prevState) =>({
 						...prevState,
 						userName: e.target.value
 					}))}
 					value={userData.userName} 
 					/>
-					<input  placeholder="Write surname" 
+
+					<input className="input_name" placeholder="Write surname" 
 					onChange={(e) => setUserData((prevState) =>({
 						...prevState,
 						userSurname: e.target.value
 					}))} 
 					value={userData.userSurname} 
 					/>
-					<input  placeholder="Write salary"
+
+					<input className="input_name" placeholder="Write age" 
+					onChange={(e) => setUserData((prevState) =>({
+						...prevState,
+						userAge: e.target.value
+					}))} 
+					value={userData.userAge} 
+					/>
+
+					<input className="input_name"  placeholder="Write salary"
 					 onChange={(e) => setUserData((prevState) =>({
 						...prevState,
 						userSalary: e.target.value
@@ -85,8 +100,8 @@ function Hasmiktable(){
 					/>
 				
 					<div classNmae="buttons-wrapper">
-						<button type="reset" >Clean</button>
-						<button disabled={!isFilledFields}  type="submit" >{editableUserData.isEdit ? `Edit` : `Add` }</button>
+						<button className="button_input" type="reset" >Clean</button>
+						<button className="button_input" disabled={!isFilledFields}  type="submit" >{editableUserData.isEdit ? `Edit` : `Add` }</button>
 					</div>
 			  
 			    </form>
@@ -94,25 +109,27 @@ function Hasmiktable(){
 		     </div>
 
 		<div className="table-data">
-			<table>
+			<table className="table">
 				{/* <th> <span>&#8592;</span>HOME</th> */}
-				<th>#</th>
-				<th> User Name </th>
-				<th> User Surname </th>
-				<th> User Salary </th>
-				<th>Actions</th>
+				<th className="tht">#</th>
+				<th className="th"> User Name </th>
+				<th className="th"> User Surname </th>
+				<th className="tha"> Age </th>
+				<th className="th"> User Salary </th>
+				<th className="th">Actions</th>
 
 				<tbody>
                   {users.map((user, index) => (
 					<tr>
-					<td>{index + 1}</td>
-					<td>{user.userName}</td>
-					<td>{user.userSurname}</td>
-					<td>{user.userSalary}</td>
-					<td >
+					<td className="tdt">{index + 1}</td>
+					<td className="td">{user.userName}</td>
+					<td className="td">{user.userSurname}</td>
+					<td className="td">{user.userAge}</td>
+					<td className="td">{user.userSalary}</td>
+					<td className="td">
 						<div className='td-btn' >
-							<button className="edit-action" onClick ={() => handleEditClick(user, index)}>Edit</button>
-							<button  className="remove-action" onClick={() => handleRemoveClick(index)}>Delete</button>
+							<button className="edit-action button" onClick ={() => handleEditClick(user, index)}>Edit</button>
+							<button  className="remove-action button" onClick={() => handleRemoveClick(index)}>Delete</button>
 						</div>
 					</td>
 				</tr>
@@ -128,6 +145,7 @@ function Hasmiktable(){
 	</div>
 
   </div>
+</div>  
   )
 }
 export default Hasmiktable;
