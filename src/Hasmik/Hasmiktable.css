@@ -1,18 +1,15 @@
-body{
+.body{
+	width:100%;
+	height: 635px;
 	background: url(./image/kapan.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	opacity: 0.8;
   }
-
-*{
-	margin:0;
-	padding: 0;
-	
-}
 .profile {
     height: 100px;
     width: 100px;
-    border-radius: 130px;
+	border-radius: 130px;
   } 
 .wrapper{
 	width: 100%;
@@ -24,21 +21,22 @@ body{
 	justify-content: space-evenly;
 	width: 100%;
 }
-form{
+.forma{
 	display: flex;
 	flex-direction: column;
 }
-span{
+/* span{
 	font-size: 30px;
 	text-align: center;
-}
-input {
-	padding: 8px;
+} */
+.input_name {
+	padding: 10px;
 	margin: 5px 0;
 	text-align: left;
 	background-color: rgba(203, 163, 240, 0.8);
 	color: black;
 	font-size: 30px;
+	border-radius: 20px;
 }
 
 .buttons-wrapper {
@@ -47,52 +45,90 @@ input {
 	width: 100%;
 	margin: 10px 0;
 }
-button {
-	width: 150px;
+.button_input {
+	width: 180px;
+	height: 50px;
 	background: blueviolet;
 	margin:0 5px;
+	border-radius: 15px;
+	border: 1px solid black;
+	color:black;
+	font-size: 15px;
 }
-table {
+
+.table {
 	width: 100%;
 	border-collapse: collapse;
 	border: 1px solid white;
 	color: white;
 }
-th {
-	min-width: 150px;
-	border: 1px solid white;
+.th {
+	min-width: 140px;
+	border: 2px solid black;
 	text-align: center;
 	padding: 5px;
 	background-color: rgba(203, 163, 240, 0.8);
 	color: white;
 	font-size: 20px;
 }
-th:first-child {
+.tht{
+	min-width: 140px;
+	border: 2px solid black;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(203, 163, 240, 0.8);
+	color: black;
+	font-size: 20px;
+}
+.th:first-child {
    min-width: 20px;
 }
+.tha {
+	min-width: 10px;
+	border: 2px solid black;
+	text-align: center;
+	background-color: rgba(203, 163, 240, 0.8);
+	color: white;
+	font-size: 20px;
+ }
 
-td {
-	border: 1px solid white;
+.td {
+	border: 2px solid blueviolet;
 	padding: 5px;
-	color: black
+	color: blueviolet;
+	font-weight: 900;
+}
+.tdt {
+	border: 2px solid blueviolet;
+	padding: 5px;
+	color: black;
+	font-weight: 900;
 }
 .td-btn {
 	width: 260px;
 }
-.edit-action{
+.edit-action {
   background-color: blueviolet;
   color: white;
+  font-size: 18px;
+  width: 90px;
+  height: 30px;
+  margin: 5px 10px;
 }
 .edit-action:hover{
-	background-color:grey;
+	background-color:rgb(225, 209, 209);
 	color: blueviolet;
   }
 .remove-action{
 background-color: blueviolet;
   color: white;
+  font-size: 18px;
+  width: 100px;
+  height: 30px;
+  margin: 5px 10px;
 }
 .remove-action:hover{
-	background-color: grey;
+	background-color: rgb(225, 209, 209);
 	color: blueviolet;
   }
 
