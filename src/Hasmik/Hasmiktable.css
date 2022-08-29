@@ -1,0 +1,99 @@
+body{
+	background: url(./image/kapan.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+  }
+
+*{
+	margin:0;
+	padding: 0;
+	
+}
+.profile {
+    height: 100px;
+    width: 100px;
+    border-radius: 130px;
+  } 
+.wrapper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.wrapper-content {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+form{
+	display: flex;
+	flex-direction: column;
+}
+span{
+	font-size: 30px;
+	text-align: center;
+}
+input {
+	padding: 8px;
+	margin: 5px 0;
+	text-align: left;
+	background-color: rgba(203, 163, 240, 0.8);
+	color: black;
+	font-size: 30px;
+}
+
+.buttons-wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 10px 0;
+}
+button {
+	width: 150px;
+	background: blueviolet;
+	margin:0 5px;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: 1px solid white;
+	color: white;
+}
+th {
+	min-width: 150px;
+	border: 1px solid white;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(203, 163, 240, 0.8);
+	color: white;
+	font-size: 20px;
+}
+th:first-child {
+   min-width: 20px;
+}
+
+td {
+	border: 1px solid white;
+	padding: 5px;
+	color: black
+}
+.td-btn {
+	width: 260px;
+}
+.edit-action{
+  background-color: blueviolet;
+  color: white;
+}
+.edit-action:hover{
+	background-color:grey;
+	color: blueviolet;
+  }
+.remove-action{
+background-color: blueviolet;
+  color: white;
+}
+.remove-action:hover{
+	background-color: grey;
+	color: blueviolet;
+  }
+
+
