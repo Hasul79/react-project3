@@ -24,9 +24,6 @@ function App() {
 			{/* <Route path="/Slava"   element={< />} /> */}
       </Routes>
 	</BrowserRouter>
-
 	);
 }
-
-
 export default App;
