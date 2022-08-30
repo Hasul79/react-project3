@@ -1,0 +1,105 @@
+
+.wrappera {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://media.istockphoto.com/photos/light-blue-paper-texture-background-picture-id1303637923?b=1&k=20&m=1303637923&s=612x612&w=0&h=iwLb9ARrRFooPmT5Bp2Gq2iX22AbVGIVpRrJFd2Bvl4=);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .wrapper-contenta {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 30px 0;
+  }
+  
+  .formaa {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputa{
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 20px;
+    width: 100%;
+    height: 20px;
+    border: none;
+  }
+  
+  .inputa:first-child{
+    margin: 0 0 5px;
+  }
+  
+  .buttons-wrappera {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  .buttona{
+    width: 80px;
+    border-radius: 50px;
+    background-color: rgb(250, 111, 76);
+    border: 0.5px solid black;
+  }
+  
+  .edit-ectiona{
+    width: 60px;
+    border-radius: 50px;
+    background-color: rgb(250, 111, 76);
+    border: 0.5px solid black;
+  }
+  
+  .remove-actiona{
+    width: 60px;
+    border-radius: 50px;
+    background-color: rgb(250, 111, 76);
+    border: 0.5px solid black;
+  }
+  
+  .tablea{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
+  .tha{
+    min-width: 120px;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(250, 111, 76);
+    color: rgb(0, 0, 0);
+  }
+  
+  .tha:first-child{
+    min-width: 20px;
+  }
+  
+  .tda{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    
+  }
+  
+  .tbodya{
+    background-color: white;
+    font-size: large;
+  }
+  
+  .menua{
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: rgb(250, 111, 76);
+    border: 0.5px solid black;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    font-size: large;
+  }
