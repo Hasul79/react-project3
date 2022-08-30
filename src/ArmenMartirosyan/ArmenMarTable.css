@@ -19,11 +19,16 @@
 }
 
 .input1 {
+  padding: 6%;
   width: 95%;
   margin: 1.5%;
   text-align: center;
   margin-left: 85%;
-  font-size: 20px
+  font-size: 20px;
+  border-radius: 30px;
+  box-shadow: inset 0px 0px 25px 0px rgb(98, 132, 166);
+  border: none;
+  outline: none;
 }
 
 .buttons-wrapper1 {
@@ -35,27 +40,38 @@
 }
 
 .butt1 {
-  width: 35%;
+  width: 38%;
   background-color: #00FF42;
   color: black;
   margin-left: 20%;
+  padding: 3%;
+  border-radius: 60px;
+  font-size: 22px;
+  border: none;
+  outline: none;
 }
 
 .butt1:hover {
   background: blueviolet;
   color: white;
+  box-shadow: none;
 }
 
 .butt2 {
-  width: 35%;
+  width: 38%;
   background-color: #00FF42;
   color: black;
-  margin-right: 7%;
+  padding: 3%;
+  border-radius: 60px;
+  font-size: 22px;
+  border: none;
+  outline: none;
 }
 
 .butt2:hover {
   background: blueviolet;
   color: white;
+  box-shadow: none;
 }
 
 .table1 {
@@ -73,55 +89,70 @@
   text-align: center;
   padding: 10px 20px;
   background-color: #FF5BAD;
-  font-size: 18px;
+  font-size: 19px;
 }
 
 /* :first-child այս կոնցեպտը նրա համար է որպեսզի որոշակի առանձնահատկություն տա ծնողի առաջին երեխային(child),
 տվյալ դեպքում որոշակի յուրահատուկ պարամետրեր է տրվում th-ի առաջին երեխային */
 .th1:first-child {
-  min-width: 20px;
+  min-width: 10px;
 }
 
 .edit-action1 {
-  width: 35%;
-  margin: 3%;
+  width: 32%;
+  margin: 4%;
   background-color: #00FF42;
   color: black;
-  font-size: 20px;
-  border-radius: 40%;
-
+  font-size: 18px;
+  padding: 3%;
+  border-radius: 20px;
+  border: none;
 }
 
 .edit-action1:hover {
   background: blueviolet;
   color: white;
+  box-shadow: none;
 }
 
 .remove-action1 {
-  width: 58%;
+  width: 60%;
   background-color: #00FF42;
   color: black;
-  font-size: 20px;
+  font-size: 17px;
+  padding: 5%;
+  border-radius: 35%;
+  border: none;
+  text-align:justify;
 }
 
 .remove-action1:hover {
   background: blueviolet;
   color: white;
+  box-shadow: none;
 }
 
 .td1 {
   border: 2px ridge #FFFF00;
   text-align: center;
+  margin: 200px 20px;
+
 }
 
 .home {
   width: 50%;
-  margin-left: 108%;
+  margin-left: 112%;
   background: yellow;
   color: black;
+  padding: 4%;
+  border-radius: 60px;
+  font-size: 22px;
+  border: none;
+  outline: none; 
 }
 
 .home:hover {
   background: blueviolet;
   color: white;
+  box-shadow: none;
 }
