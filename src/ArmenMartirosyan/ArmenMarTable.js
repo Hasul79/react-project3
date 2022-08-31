@@ -41,7 +41,7 @@ function ArmenMarTable() {
         //Saving changing user data-փոփոխվող user-ի տվյալների պահպանում
         setEditTableUseData({
           isEdit: false, // սա նշանակում է փոփոխվող user-ի նախկին տվյալները չպահպանել, զրոյացնել
-          userIndex: null //փոփոխվող user-ի index-ի զրոյացում 
+          userIndex: null //փոփոխվող user-ի index-ի զրոյացում  
         })
       } else {//adding a new user-...prevState-ին(նախկին վիճակ) ավելացվում է նոր user-ը
         setUsers((prevState) => [...prevState, userData]);
