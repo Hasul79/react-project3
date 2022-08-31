@@ -14,7 +14,7 @@
 
 .form1 {
   display: flex;
-  /* եթե ունենք օրինակ 4 հատ քառակուսի,flex-direction: column-ը ձախ վերևից սյունյակաձև տեղադրում է այդ քառակուսիները */
+  /* եթե ունենք օրինակ 4 հատ քառակուսի,flex-direction: column-ը ձախ վերևից սյունյակաձև տեղադրում է այդ քառակուսիները: */
   flex-direction: column;
 }
 
@@ -76,7 +76,7 @@
 
 .table1 {
   width: 110%;
-  /* border-collapse: collapse-ը սահմանում է որ աղյուսակի բոլոր գծային սահմանները լինեն ընդհանուր, իսկ border-collapse: separate-ի դեպքում յուրաքանչյուր ուղանկյուն առանձնանում է որոշակի տարածությամբ մյուս ուղանկյուններից :*/
+  /* border-collapse: collapse-ը սահմանում է որ աղյուսակի բոլոր գծային սահմանները լինեն ընդհանուր, իսկ border-collapse: separate-ի դեպքում յուրաքանչյուր ուղանկյուն առանձնանում է որոշակի տարածությամբ մյուս ուղանկյուններից */
   border-collapse: collapse;
   border: 4px ridge #FFFF00;
   margin-top: 0.6%;
@@ -140,7 +140,7 @@
 }
 
 .home {
-  width: 50%;
+  width: 51%;
   margin-left: 112%;
   background: yellow;
   color: black;
