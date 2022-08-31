@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Table.css";
-
+import { Link } from "react-router-dom";
 
 const initialValues = {
   userName:'',
@@ -61,27 +61,27 @@ const handleEditClick =(data, index) => {
 
 
   return (
-   <div className='wrappera'>
-    <div className='wrapper-contenta'>
-      <div className='table-dataa'>
-        <table className='tablea'>
-          <th className='tha'>#</th>
-          <th className='tha'>User Name</th>
-          <th className='tha'>User Surname</th>
-          <th className='tha'>User Salary</th>
-          <th className='tha'>Actions</th>
+   <div className='wrapperx'>
+    <div className='wrapper-contentx'>
+      <div className='table-datax'>
+        <table className='tablex'>
+          <th className='thx'>#</th>
+          <th className='thx'>User Name</th>
+          <th className='thx'>User Surname</th>
+          <th className='thx'>User Salary</th>
+          <th className='thx'>Actions</th>
 
-          <tbody className='tbodya'>
+          <tbody className='tbodyx'>
             {users.map((user, index) => (
               <tr>
-                <td className='tda'>{index + 1}</td>
-                <td className='tda'>{user.userName}</td>
-                <td className='tda'>{user.userSurname}</td>
-                <td className='tda'>{user.userSalary}</td>
-                <td className='tda'>
+                <td className='tdx'>{index + 1}</td>
+                <td className='tdx'>{user.userName}</td>
+                <td className='tdx'>{user.userSurname}</td>
+                <td className='tdx'>{user.userSalary}</td>
+                <td className='tdx'>
                   <div>
-                    <button className='edit-ectiona' onClick={() => handleEditClick(user,index)}>edit</button>
-                    <button className='remove-actiona' onClick={() => handleRemoveClick(index)}>remove</button>
+                    <button className='edita-ectionx' onClick={() => handleEditClick(user,index)}>edit</button>
+                    <button className='removea-actionx' onClick={() => handleRemoveClick(index)}>remove</button>
                   </div>
                 </td>
               </tr>
@@ -92,8 +92,8 @@ const handleEditClick =(data, index) => {
         </table>
       </div>
         <div>
-          <form className='formaa' onSubmit={handleSubmitUser} onReset={handleCleanClick}>
-            <input className='inputa' placeholder="Write your name" onChange={(e) => setUserData((prevState) => ({
+          <form className='formax' onSubmit={handleSubmitUser} onReset={handleCleanClick}>
+            <input className='inputx' placeholder="Write your name" onChange={(e) => setUserData((prevState) => ({
               ...prevState,
               userName: e.target.value
             }))} 
@@ -101,14 +101,14 @@ const handleEditClick =(data, index) => {
             />
 
 
-            <input className='inputa' placeholder="Write your surname" onChange={(e) => setUserData((prevState) => ({
+            <input className='inputx' placeholder="Write your surname" onChange={(e) => setUserData((prevState) => ({
               ...prevState,
               userSurname: e.target.value}))}
               value={userData.userSurname}
                />
 
 
-            <input className='inputa' placeholder="Write your salary" onChange={(e) => setUserData((prevState) => ({
+            <input className='inputx' placeholder="Write your salary" onChange={(e) => setUserData((prevState) => ({
               ...prevState,
               userSalary: e.target.value
             }))}
@@ -116,15 +116,18 @@ const handleEditClick =(data, index) => {
             />
 
 
-            <div className='buttons-wrappera'>
-              <button className='buttona' type="reset">Clean</button>
-              <button className='buttona' disabled={!isFilledFields} type="submit">{editableUserData.isEdit ? 'Edit' : 'Add'}</button>
+            <div className='buttons-wrapperx'>
+              <button className='buttonx' type="reset">Clean</button>
+              <button className='buttonx' disabled={!isFilledFields} type="submit">{editableUserData.isEdit ? 'Edit' : 'Add'}</button>
             </div>
           </form>
         </div>
     </div>
     <div>
-      <button className='menua'>Back to menu</button>
+    <Link to="/">
+              <button className='menux'>Back to Home</button>
+            </Link>
+      
       </div>
    </div>
   );
