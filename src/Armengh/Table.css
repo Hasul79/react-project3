@@ -1,5 +1,5 @@
 
-.wrappera {
+.wrapperx {
     width: 100%;
     height: 850px;
     display: flex;
@@ -9,19 +9,19 @@
     background-size: cover;
   }
   
-  .wrapper-contenta {
+  .wrapper-contentx {
     display: flex;
     justify-content: space-between;
     width: 800px;
     margin: 30px 0;
   }
   
-  .formaa {
+  .formax {
     display: flex;
     flex-direction: column;
   }
   
-  .inputa{
+  .inputx{
     padding: 5px;
     margin: 5px 0;
     border-radius: 20px;
@@ -30,45 +30,45 @@
     border: none;
   }
   
-  .inputa:first-child{
+  .inputx:first-child{
     margin: 0 0 5px;
   }
   
-  .buttons-wrappera {
+  .buttons-wrapperx {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: 10px 0;
   }
   
-  .buttona{
+  .buttonx{
     width: 80px;
     border-radius: 50px;
     background-color: rgb(250, 111, 76);
     border: 0.5px solid black;
   }
   
-  .edit-ectiona{
+  .edita-ectionx{
     width: 60px;
     border-radius: 50px;
     background-color: rgb(250, 111, 76);
     border: 0.5px solid black;
   }
   
-  .remove-actiona{
+  .removea-actionx{
     width: 60px;
     border-radius: 50px;
     background-color: rgb(250, 111, 76);
     border: 0.5px solid black;
   }
   
-  .tablea{
+  .tablex{
     width: 100%;
     border-collapse: collapse;
     border: 1px solid rgb(0, 0, 0);
   }
   
-  .tha{
+  .thx{
     min-width: 120px;
     border: 1px solid rgb(0, 0, 0);
     text-align: center;
@@ -77,22 +77,22 @@
     color: rgb(0, 0, 0);
   }
   
-  .tha:first-child{
+  .thx:first-child{
     min-width: 20px;
   }
   
-  .tda{
+  .tdx{
     border: 1px solid rgb(0, 0, 0);
     padding: 5px;
     
   }
   
-  .tbodya{
+  .tbodyx{
     background-color: white;
     font-size: large;
   }
   
-  .menua{
+  .menux{
     width: 100px;
     height: 50px;
     border-radius: 50px;
