@@ -62,78 +62,78 @@ function ArmenMarTable() {
   }
   return (
     <div className="body1">
-    <div className="wrapper1">
-      <div className="wrapper-content1">
-        <div className="table-data1">
-          <table className="table1">
-            {/* Table Header element-աղյուսակի վերնագրի տարրերի սահմանում*/}
-            <th className="th1">#</th>
-            <th className="th1">User Name</th>
-            <th className="th1">User Surname</th>
-            <th className="th1">User Salary</th>
-            <th className="th1">Actions</th>
-            {/* մեր ավելացվող user(օգտագործող)-ներին հասցեագրելու համար ենք ստեղծում tbody-ն */}
-            <tbody>
-              {users.map((user, index) => (//Adding users-user-ների ավելացնում տաբլիցայի տակ add կնոպկայով
-                <tr>
-                  {/*Defining user serial numbers-user-ների հերթական համարների սահմանում */}
-                  <td className="td1">{index + 1}</td>
-                  <td className="td1">{user.userName}</td>
-                  <td className="td1">{user.userSurname}</td>
-                  <td className="td1">{user.userSalary}</td>
-                  <td>
-                    <div>
-                      <button className="edit-action1" onClick={() => handleEditСlick(user, index)}>Edit</button>
-                      <button className="remove-action1" onClick={() => handleRemoveClick(index)}>Remove</button>
-                    </div>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <div>
-          {/*Users are added to the form-form-ում ավելացվում են user-ները*/}
-          <form className="form1" onSubmit={handleSubmitUser} onReset={handleCleanClick}>
-            <input className="input1" placeholder="Write your name"
-              //e-ից ստանում ենք ընթացիկ արժեքը
-              //previous state- ...prevState-ը նախորդ վիճակն է 
-              onChange={(e) => setUserData((prevState) => ({
-                ...prevState,
-                userName: e.target.value //e.target.value-սա ընթացիկ թարմացված արժեքն է օբյեկտի 
-              }))}
-              value={userData.userName}
-            />
-            <input className="input1" placeholder="Write your surname"
-              onChange={(e) => setUserData((prevState) => ({
-                ...prevState,
-                userSurname: e.target.value
-              }))}
-              value={userData.userSurname}
-            />
-            <input className="input1" placeholder="Write your salary"
-              onChange={(e) => setUserData((prevState) => ({
-                ...prevState,
-                userSalary: e.target.value
-              }))}
-              value={userData.userSalary}
-            />
-            <div className="buttons-wrapper1">
-              {/* Clean button */}
-              <button type="reset" className="butt1">Clean</button>
-              {/*Edit and Add buttons*/}
-              <button type="submit" className="butt2">{editTableUserData.isEdit ? "Edit" : "Add"}</button>
-            </div>
-          </form>
+      <div className="wrapper1">
+        <div className="wrapper-content1">
+          <div className="table-data1">
+            <table className="table1">
+              {/* Table Header element-աղյուսակի վերնագրի տարրերի սահմանում*/}
+              <th className="th1">#</th>
+              <th className="th1">User Name</th>
+              <th className="th1">User Surname</th>
+              <th className="th1">User Salary</th>
+              <th className="th1">Actions</th>
+              {/* մեր ավելացվող user(օգտագործող)-ներին հասցեագրելու համար ենք ստեղծում tbody-ն */}
+              <tbody>
+                {users.map((user, index) => (//Adding users-user-ների ավելացնում տաբլիցայի տակ add կնոպկայով
+                  <tr>
+                    {/*Defining user serial numbers-user-ների հերթական համարների սահմանում */}
+                    <td className="td1">{index + 1}</td>
+                    <td className="td1">{user.userName}</td>
+                    <td className="td1">{user.userSurname}</td>
+                    <td className="td1">{user.userSalary}</td>
+                    <td>
+                      <div>
+                        <button className="edit-action1" onClick={() => handleEditСlick(user, index)}>Edit</button>
+                        <button className="remove-action1" onClick={() => handleRemoveClick(index)}>Remove</button>
+                      </div>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
           <div>
-            {/* Login button */}
-            <Link to="/">
-              <button className="home" type="button" >Home</button>
-            </Link>
+            {/*Users are added to the form-form-ում ավելացվում են user-ները*/}
+            <form className="form1" onSubmit={handleSubmitUser} onReset={handleCleanClick}>
+              <input className="input1" placeholder="Write your name"
+                //e-ից ստանում ենք ընթացիկ արժեքը
+                //previous state- ...prevState-ը նախորդ վիճակն է 
+                onChange={(e) => setUserData((prevState) => ({
+                  ...prevState,
+                  userName: e.target.value //e.target.value-սա ընթացիկ թարմացված արժեքն է օբյեկտի 
+                }))}
+                value={userData.userName}
+              />
+              <input className="input1" placeholder="Write your surname"
+                onChange={(e) => setUserData((prevState) => ({
+                  ...prevState,
+                  userSurname: e.target.value
+                }))}
+                value={userData.userSurname}
+              />
+              <input className="input1" placeholder="Write your salary"
+                onChange={(e) => setUserData((prevState) => ({
+                  ...prevState,
+                  userSalary: e.target.value
+                }))}
+                value={userData.userSalary}
+              />
+              <div className="buttons-wrapper1">
+                {/* Clean button */}
+                <button type="reset" className="butt1">Clean</button>
+                {/*Edit and Add buttons*/}
+                <button type="submit" className="butt2">{editTableUserData.isEdit ? "Edit" : "Add"}</button>
+              </div>
+            </form>
+            <div>
+              {/* Login button */}
+              <Link to="/">
+                <button className="home" type="button" >Home</button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   )
 }

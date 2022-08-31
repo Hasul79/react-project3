@@ -52,7 +52,7 @@
 }
 
 .butt1:hover {
-  background: blueviolet;
+  background: #0033FF;
   color: white;
   box-shadow: none;
 }
@@ -69,14 +69,14 @@
 }
 
 .butt2:hover {
-  background: blueviolet;
+  background: #0033FF;
   color: white;
   box-shadow: none;
 }
 
 .table1 {
   width: 110%;
-  /* border-collapse: collapse-ը սահմանում է որ աղյուսակի բոլոր գծային սահմանները լինեն ընդհանուր, իսկ border-collapse: separate-ի դեպքում յուրաքանչյուր ուղանկյուն առանձնանում է որոշակի տարածությամբ մյուս ուղանկյուններից */
+  /* border-collapse: collapse-ը սահմանում է որ աղյուսակի բոլոր գծային սահմանները լինեն ընդհանուր, իսկ border-collapse: separate-ի դեպքում յուրաքանչյուր ուղանկյուն առանձնանում է որոշակի տարածությամբ մյուս ուղանկյուններից :*/
   border-collapse: collapse;
   border: 4px ridge #FFFF00;
   margin-top: 0.6%;
@@ -110,7 +110,7 @@
 }
 
 .edit-action1:hover {
-  background: blueviolet;
+  background: #0033FF;
   color: white;
   box-shadow: none;
 }
@@ -123,11 +123,11 @@
   padding: 5%;
   border-radius: 35%;
   border: none;
-  text-align:justify;
+  text-align: justify;
 }
 
 .remove-action1:hover {
-  background: blueviolet;
+  background: #0033FF;
   color: white;
   box-shadow: none;
 }
@@ -148,11 +148,11 @@
   border-radius: 60px;
   font-size: 22px;
   border: none;
-  outline: none; 
+  outline: none;
 }
 
 .home:hover {
-  background: blueviolet;
+  background: #0033FF;
   color: white;
   box-shadow: none;
 }
