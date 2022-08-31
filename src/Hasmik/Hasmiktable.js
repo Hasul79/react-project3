@@ -1,6 +1,8 @@
 import React, { useState} from 'react';
 import './Hasmiktable.css';
+// import './Hasmik.css';
 import profile from './image/njdeh2.jpg';
+import { Link } from "react-router-dom";
 
 const initialValues = {
 	userName: '',
@@ -61,9 +63,11 @@ function Hasmiktable(){
   <div className="wrapper">
 	<div className="wrapper-content">
 	   <div className="form-data">
+	   				
 	     <div className="container-image">
              <img src={profile} alt="profile" className="profile"/>
 			 </div>
+			 
 
 
                 <form className="forma" onSubmit={handleSubmitUser} onReset={handleCleanClick}>
@@ -83,7 +87,7 @@ function Hasmiktable(){
 					value={userData.userSurname} 
 					/>
 
-					<input className="input_name" placeholder="Write age" 
+					<input className="input_name" placeholder="Write your age" 
 					onChange={(e) => setUserData((prevState) =>({
 						...prevState,
 						userAge: e.target.value
@@ -105,13 +109,13 @@ function Hasmiktable(){
 					</div>
 			  
 			    </form>
-			  
+				<Link to="/"><button className="home-btn">&#8592; Home</button></Link>
 		     </div>
 
 		<div className="table-data">
 			<table className="table">
-				{/* <th> <span>&#8592;</span>HOME</th> */}
-				<th className="tht">#</th>
+				{/* <th> <span></span>HOME</th> */}
+				<th className="tha">#</th>
 				<th className="th"> User Name </th>
 				<th className="th"> User Surname </th>
 				<th className="tha"> Age </th>
@@ -124,7 +128,7 @@ function Hasmiktable(){
 					<td className="tdt">{index + 1}</td>
 					<td className="td">{user.userName}</td>
 					<td className="td">{user.userSurname}</td>
-					<td className="td">{user.userAge}</td>
+					<td className="tda">{user.userAge}</td>
 					<td className="td">{user.userSalary}</td>
 					<td className="td">
 						<div className='td-btn' >
@@ -135,11 +139,11 @@ function Hasmiktable(){
 				</tr>
 				  ))}
 					
-
-					 
+					
 				</tbody>
 
 			</table>
+			{/*  */}
 		</div>
 		    
 	</div>
