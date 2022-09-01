@@ -1,7 +1,9 @@
 import React, { useState} from 'react';
 import './Hasmiktable.css';
 // import './Hasmik.css';
-import profile from './image/njdeh2.jpg';
+import njdeh from './image/njdeh.jpg';
+import kapan from './image/kapan.jpg';
+import  profile  from './image/a.jpg';
 import { Link } from "react-router-dom";
 
 const initialValues = {
@@ -12,12 +14,21 @@ const initialValues = {
 }
 
 function Hasmiktable(){
+	// dark & light
+	const [isClicked, setIsClicked] = useState(false); //click-ով բացի նկարներն
+
 	const [userData, setUserData] = useState(initialValues);
 	const [users, setUsers] = useState([]);
 	const [editableUserData, setEditableUserData] = useState({
 		isEdit: false,
 		userIndex: null
 	});
+
+	// dark & light
+	const handleToggle = () => {
+		setIsClicked(!isClicked);
+	  };
+//  table function
 
    const handleRemoveClick = (index) =>{
        setUsers(users.filter((user, userIndex) => userIndex !== index));
@@ -58,18 +69,36 @@ function Hasmiktable(){
   }
 	console.log('userData ', userData);
 
+
+
 	return (
+
 <div className="body">
+<div>
+	   {
+		  isClicked  ? <img src={njdeh} />  : <img src={kapan} />
+		} 	
+       
+	   <button className="bg" onClick={handleToggle}>
+		{
+		  isClicked ? "Dark" : "Light" 
+		}
+		</button>
+	 </div>
+    
   <div className="wrapper">
+  
 	<div className="wrapper-content">
+	
 	   <div className="form-data">
-	   				
-	     <div className="container-image">
+	   	  		     
+	 
+	       <div className="container-image">
              <img src={profile} alt="profile" className="profile"/>
 			 </div>
 			 
 
-
+	
                 <form className="forma" onSubmit={handleSubmitUser} onReset={handleCleanClick}>
 					<input className="input_name" placeholder=" Write your name" 
 					onChange={(e) => setUserData((prevState) =>({
