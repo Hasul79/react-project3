@@ -3,7 +3,7 @@ import './Hasmiktable.css';
 // import './Hasmik.css';
 import njdeh from './image/njdeh.jpg';
 import kapan from './image/kapan.jpg';
-import  profile  from './image/a.jpg';
+import  prof from './image/a.jpg';
 import { Link } from "react-router-dom";
 
 const initialValues = {
@@ -76,7 +76,7 @@ function Hasmiktable(){
 <div className="body">
 <div>
 	   {
-		  isClicked  ? <img src={njdeh} />  : <img src={kapan} />
+		  isClicked  ? <img className="nkar" src={njdeh} />  : <img className="nkar" src={kapan} />
 		} 	
        
 	   <button className="bg" onClick={handleToggle}>
@@ -93,8 +93,8 @@ function Hasmiktable(){
 	   <div className="form-data">
 	   	  		     
 	 
-	       <div className="container-image">
-             <img src={profile} alt="profile" className="profile"/>
+	       <div className="cont-image">
+             <img src={prof} alt="prof" className="prof"/>
 			 </div>
 			 
 

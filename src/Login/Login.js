@@ -68,7 +68,7 @@ function Login() {
     <div className="main">
      <div className="sub-main">
        <div>
-         <div className="imgs">
+         <div className="imgss">
            <div className="container-image">
              <img src={profile} alt="profile" className="profile"/>
 
