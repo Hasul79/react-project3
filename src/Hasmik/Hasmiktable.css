@@ -16,7 +16,7 @@
   }
  .cont-image{
    position:relative;
-   left: 30px;
+   right: 20px;
 }
   
 .prof {
@@ -80,6 +80,7 @@
 	background-color:rgb(225, 209, 209);
 	color: blueviolet;
 }
+
 .table {
 	margin: 10px;
 	width: 100%;
@@ -87,8 +88,8 @@
 	border: 1px solid white;
 	color: black;
 }
-.th {
-	min-width: 140px;
+.thb {
+	max-width: 140px;
 	border: 2px solid black;
 	text-align: center;
 	padding: 5px;
@@ -199,6 +200,94 @@ background-color: blueviolet;
 	font-size: 20px;
 	font-weight: 700;
 	letter-spacing: 2px;
-	
  }
 
+ @media screen and (max-width: 900px )  {
+	.cont-image .prof{
+		width:30%;
+		position: absolute;
+		left: 20px;
+		top:70px;
+	}
+	.table-data {
+		width:90%;
+		position: absolute;
+		top: 35px;
+		left:0;
+		float: left;
+	}
+	 .thb , .tha, .td, .tda, .tdt{
+		font-size: 80%;
+		font-size: 80%;
+		
+	}
+	.forma{
+		width:30%;
+		float: left;
+		top:180px;
+		margin:1px;
+	}
+	.input_name{
+		font-size: 15px;
+	}
+	.buttons-wrapper ,
+	 .button_input,
+	 .remove-action,
+	 .edit-action {
+		position: relative;
+		width: 60px;
+		height: 25px;
+		font-size: 11px;
+		margin: 2px;
+		padding: 1px;
+		
+	}
+	.home-btn{
+	position: absolute;
+	    left:0;
+		width:20px;
+		height: 35px;
+		bottom: 15px;
+	}
+	
+ }
+ @media screen and (max-width: 530px ){
+	.thb , .tha, .td, .tda, .tdt{
+		font-size: 100%;
+		font-size: 50%;	
+	}
+	.buttons-wrapper ,
+	 .button_input {
+		position: relative;
+		width: 55px;
+		height: 30px;
+		bottom: 5px;
+		font-size: 11px;
+		margin: 3px;
+		padding: 1px;
+		
+	}
+	.remove-action,
+	 .edit-action{
+		margin-top: 2px;
+		margin-bottom: 0;
+	 }
+ }
+ @media screen and (max-width: 400px ) {
+	.remove-action,
+	.edit-action{
+	   width:30px;
+	   height: 15px;
+	   font-size: 9px;
+	}
+	.buttons-wrapper ,
+	 .button_input {
+		position: relative;
+		width: 45px;
+		height: 30px;
+		bottom: 5px;
+		font-size: 11px;
+		margin: 3px;
+		padding: 1px;
+	}
+ }
