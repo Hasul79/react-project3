@@ -145,11 +145,11 @@ function Hasmiktable(){
 			<table className="table">
 				{/* <th> <span></span>HOME</th> */}
 				<th className="tha">#</th>
-				<th className="th"> User Name </th>
-				<th className="th"> User Surname </th>
+				<th className="thb"> User Name </th>
+				<th className="thb"> User Surname </th>
 				<th className="tha"> Age </th>
-				<th className="th"> User Salary </th>
-				<th className="th">Actions</th>
+				<th className="thb"> User Salary </th>
+				<th className="thb">Actions</th>
 
 				<tbody>
                   {users.map((user, index) => (
