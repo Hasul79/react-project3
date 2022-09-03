@@ -1,15 +1,30 @@
-.body{
-	width:100%;
+.body {
+	width: 100%;
 	height: 635px;
-	background: url(./image/kapan.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 0.8;
   }
-.profile {
+
+  .nkar {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -99;
+	
+	
+  }
+ .cont-image{
+   position:relative;
+   right: 20px;
+}
+  
+.prof {
     height: 100px;
     width: 100px;
 	border-radius: 130px;
+	z-index: 99;
+	margin: 10px 0;
   } 
 .wrapper{
 	width: 100%;
@@ -25,6 +40,8 @@
 	margin: 10px;
 	display: flex;
 	flex-direction: column;
+	position: absolute;
+	left: 0;
 }
 /* span{
 	font-size: 30px;
@@ -54,7 +71,8 @@
 	margin:0 5px;
 	border-radius: 15px;
 	border: 2px solid black;
-	color : white;
+	color : black;
+	font-weight: 600;
 	font-size: 20px;
 
 }
@@ -62,24 +80,16 @@
 	background-color:rgb(225, 209, 209);
 	color: blueviolet;
 }
+
 .table {
 	margin: 10px;
 	width: 100%;
 	border-collapse: collapse;
 	border: 1px solid white;
-	color: white;
+	color: black;
 }
-.th {
-	min-width: 140px;
-	border: 2px solid black;
-	text-align: center;
-	padding: 5px;
-	background-color: rgba(203, 163, 240, 0.8);
-	color: white;
-	font-size: 20px;
-}
-.tht{
-	min-width: 140px;
+.thb {
+	max-width: 140px;
 	border: 2px solid black;
 	text-align: center;
 	padding: 5px;
@@ -87,23 +97,21 @@
 	color: black;
 	font-size: 20px;
 }
-/* .tha:first-child {
-   min-width: 30px;
-} */
-.tha {
+.tha{
 	min-width: 30px;
 	border: 2px solid black;
 	text-align: center;
+	padding: 5px;
 	background-color: rgba(203, 163, 240, 0.8);
-	color: white;
+	color: black;
 	font-size: 20px;
- }
+}
 
 .td {
 	border: 2px solid blueviolet;
 	background-color:antiquewhite;
 	padding: 5px;
-	color: blueviolet;
+	color: black;
 	font-weight: 900;
 	text-align: center;
 }
@@ -119,7 +127,7 @@
 	border: 2px solid blueviolet;
 	background-color: antiquewhite;
 	padding: 5px;
-	color: blueviolet;
+	color: black;
 	font-weight: 900;
 	text-align: center;
 }
@@ -128,7 +136,7 @@
 } */
 .edit-action {
   background-color: blueviolet;
-  color: white;
+  color: black;
   font-size: 18px;
   width: 90px;
   height: 30px;
@@ -142,7 +150,7 @@
   }
 .remove-action{
 background-color: blueviolet;
-  color: white;
+  color: black;
   font-size: 18px;
   width: 100px;
   height: 30px;
@@ -163,7 +171,7 @@ background-color: blueviolet;
 	text-align: center;
 	padding: 5px;
 	background-color:blueviolet;
-	color: white;
+	color: black;
 	border-radius: 10px;
 	font-size: 20px;
 	text-transform: uppercase;
@@ -178,4 +186,108 @@ background-color: blueviolet;
     transition-duration: 0.5s;     
   cursor: pointer;
  }
+ .bg{
+	position: absolute;
+	top: 5px;
+	left: 0;
+	min-width: 70px;
+	border: 2px solid black;
+	text-align: center;
+	padding: 5px;
+	background-color:blueviolet;
+	color: white;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 2px;
+ }
 
+ @media screen and (max-width: 900px )  {
+	.cont-image .prof{
+		width:30%;
+		position: absolute;
+		left: 20px;
+		top:70px;
+	}
+	.table-data {
+		width:90%;
+		position: absolute;
+		top: 35px;
+		left:0;
+		float: left;
+	}
+	 .thb , .tha, .td, .tda, .tdt{
+		font-size: 80%;
+		font-size: 80%;
+		
+	}
+	.forma{
+		width:30%;
+		float: left;
+		top:180px;
+		margin:1px;
+	}
+	.input_name{
+		font-size: 15px;
+	}
+	.buttons-wrapper ,
+	 .button_input,
+	 .remove-action,
+	 .edit-action {
+		position: relative;
+		width: 60px;
+		height: 25px;
+		font-size: 11px;
+		margin: 2px;
+		padding: 1px;
+		
+	}
+	.home-btn{
+	position: absolute;
+	    left:0;
+		width:20px;
+		height: 35px;
+		bottom: 15px;
+	}
+	
+ }
+ @media screen and (max-width: 530px ){
+	.thb , .tha, .td, .tda, .tdt{
+		font-size: 100%;
+		font-size: 50%;	
+	}
+	.buttons-wrapper ,
+	 .button_input {
+		position: relative;
+		width: 55px;
+		height: 30px;
+		bottom: 5px;
+		font-size: 11px;
+		margin: 3px;
+		padding: 1px;
+		
+	}
+	.remove-action,
+	 .edit-action{
+		margin-top: 2px;
+		margin-bottom: 0;
+	 }
+ }
+ @media screen and (max-width: 400px ) {
+	.remove-action,
+	.edit-action{
+	   width:30px;
+	   height: 15px;
+	   font-size: 9px;
+	}
+	.buttons-wrapper ,
+	 .button_input {
+		position: relative;
+		width: 45px;
+		height: 30px;
+		bottom: 5px;
+		font-size: 11px;
+		margin: 3px;
+		padding: 1px;
+	}
+ }

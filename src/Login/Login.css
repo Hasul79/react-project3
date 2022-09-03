@@ -2,8 +2,8 @@
   text-align: center;
   justify-content: center;
   display: flex; 
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   background-image: url(../image/2a4a826b756d92121433f703d73dc7e0.jpg);
   background-size: cover;
 background-repeat: no-repeat;
@@ -11,14 +11,14 @@ background-repeat: no-repeat;
 .sub-main {
   display: flex;
   justify-content: center;
-  height: 550px;
-  width: 35%;
+  height: 540px;
+  width: 30%;
   box-shadow: 11px 12px 13px 12px rgb(207, 207, 207);
   padding-top: 30px;
   border-radius: 60px; 
   background-color:white;
 }
-.imgs {
+.imgss {
     padding-top: 20px;
     justify-content: center;
     display: flex;
@@ -93,3 +93,31 @@ background-repeat: no-repeat;
  a{
      color: rgba(15, 126, 229, 0.921);
  }
+
+ @media screen and (max-width: 1150px) {
+  .name , .check {
+    width: 50%;
+    font-size: 14px;
+  }
+  
+  .email{
+    width: 20px ;
+    height: 20px;
+    
+  } 
+}
+@media screen and (max-width: 700px) {
+  .name , .check{
+    width: 30%;
+    text-align: center; 
+    
+        
+  }
+  
+  .first-input , .second-input {
+    font-size: 9px;
+    padding: 5px;
+    text-align: center;
+    
+  } 
+}

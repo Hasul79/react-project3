@@ -68,7 +68,7 @@ function Login() {
     <div className="main">
      <div className="sub-main">
        <div>
-         <div className="imgs">
+         <div className="imgss">
            <div className="container-image">
              <img src={profile} alt="profile" className="profile"/>
 
@@ -78,7 +78,7 @@ function Login() {
          </div>
          <div>
            <h1>Login Page</h1>
-           <div>
+           <div className="first-input">
              <img src={email} alt="email" className="email"/>
              <input onChange={changeUserName} type="text" placeholder="user name" className="name" value={userName}/>
            </div>
