@@ -128,7 +128,7 @@ function ArmenMarTable() {
             <div>
               {/* Login button */}
               <Link to="/">
-                <button className="home" type="button" >Home</button>
+                <button className="home" type="button">Home</button>
               </Link>
             </div>
           </div>
