@@ -94,9 +94,30 @@ background-repeat: no-repeat;
      color: rgba(15, 126, 229, 0.921);
  }
 
- @media screen and (max-width: 900px) {
-   .name , .check{
+ @media screen and (max-width: 1150px) {
+  .name , .check {
     width: 50%;
+    font-size: 14px;
   }
-   
+  
+  .email{
+    width: 20px ;
+    height: 20px;
+    
+  } 
+}
+@media screen and (max-width: 700px) {
+  .name , .check{
+    width: 30%;
+    text-align: center; 
+    
+        
+  }
+  
+  .first-input , .second-input {
+    font-size: 9px;
+    padding: 5px;
+    text-align: center;
+    
+  } 
 }
