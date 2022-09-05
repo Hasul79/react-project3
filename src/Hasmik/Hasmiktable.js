@@ -1,6 +1,5 @@
 import React, { useState} from 'react';
 import './Hasmiktable.css';
-// import './Hasmik.css';
 import njdeh from './image/njdeh.jpg';
 import kapan from './image/kapan.jpg';
 import  prof from './image/a.jpg';
@@ -29,38 +28,40 @@ function Hasmiktable(){
 		setIsClicked(!isClicked);
 	  };
 //  table function
-
+         // Remove button ----------
    const handleRemoveClick = (index) =>{
        setUsers(users.filter((user, userIndex) => userIndex !== index));
    }
-	
+	 //input - պ/է լրացված լինի բոլոր input որ ակտիվ լինի
 	const isFilledFields = userData.userName && userData.userSurname && userData.userAge &&  userData.userSalary
-
+        
+	     //Add button ------
 	const handleSubmitUser = (e) => {
        e.preventDefault();
 
-	if(isFilledFields) {
-		if (editableUserData.isEdit) {
+	if(isFilledFields) {  //input-ների դաշտերի  լրացված ստուգում
+		if (editableUserData.isEdit) {  //առկա է, թե նոր  user անուն
 			const editedData = users;
 			editedData.splice(editableUserData.userIndex, 1, userData);
 			
-			setUsers(editedData);
+			setUsers(editedData); //տվյալների պահպանում և ավելացում
 
 			setEditableUserData({
-				isEdit: false,
-				userIndex: null
+				isEdit: false,       //  user data տվյալների զրոյացում
+				userIndex: null      //index զրոյացում
 			})
 		} else {
 	        setUsers((prevState) => [...prevState, userData]);
 		}
-		
+		// նախկին տվյալ + նոր user data
 		setUserData(initialValues)
 	}  
 }
-	
+       //Clean button  -----------
  const handleCleanClick = () => setUserData(initialValues);
 
-  const handleEditClick = (data, index) => {
+       //Edit button ---------
+  const handleEditClick = (data, index) => {  //ֆունկցիա որն ընդունում է ընթացիկ user-ին և իր index-ը
 	setUserData(data);
 	setEditableUserData({
 		isEdit: true,
@@ -74,7 +75,7 @@ function Hasmiktable(){
 	return (
 
 <div className="body">
-<div>
+<div> 
 	   {
 		  isClicked  ? <img className="nkar" src={njdeh} />  : <img className="nkar" src={kapan} />
 		} 	
@@ -87,18 +88,12 @@ function Hasmiktable(){
 	 </div>
     
   <div className="wrapper">
-  
-	<div className="wrapper-content">
-	
+  	<div className="wrapper-content">
 	   <div className="form-data">
-	   	  		     
-	 
-	       <div className="cont-image">
+	   	  <div className="cont-image">
              <img src={prof} alt="prof" className="prof"/>
-			 </div>
+		  </div>
 			 
-
-	
                 <form className="forma" onSubmit={handleSubmitUser} onReset={handleCleanClick}>
 					<input className="input_name" placeholder=" Write your name" 
 					onChange={(e) => setUserData((prevState) =>({
@@ -133,17 +128,17 @@ function Hasmiktable(){
 					/>
 				
 					<div classNmae="buttons-wrapper">
+					
 						<button className="button_input" type="reset" >Clean</button>
 						<button className="button_input" disabled={!isFilledFields}  type="submit" >{editableUserData.isEdit ? `Edit` : `Add` }</button>
 					</div>
 			  
 			    </form>
-				<Link to="/"><button className="home-btn">&#8592; Home</button></Link>
-		     </div>
+			<Link to="/"><button className="home-btn">&#8592; Home</button></Link>
+		</div>
 
 		<div className="table-data">
 			<table className="table">
-				{/* <th> <span></span>HOME</th> */}
 				<th className="tha">#</th>
 				<th className="thb"> User Name </th>
 				<th className="thb"> User Surname </th>
@@ -153,30 +148,24 @@ function Hasmiktable(){
 
 				<tbody>
                   {users.map((user, index) => (
-					<tr>
-					<td className="tdt">{index + 1}</td>
-					<td className="td">{user.userName}</td>
-					<td className="td">{user.userSurname}</td>
-					<td className="tda">{user.userAge}</td>
-					<td className="td">{user.userSalary}</td>
-					<td className="td">
-						<div className='td-btn' >
-							<button className="edit-action button" onClick ={() => handleEditClick(user, index)}>Edit</button>
-							<button  className="remove-action button" onClick={() => handleRemoveClick(index)}>Delete</button>
-						</div>
-					</td>
-				</tr>
+				   <tr>
+						<td className="tdt">{index + 1}</td>
+						<td className="td">{user.userName}</td>
+						<td className="td">{user.userSurname}</td>
+						<td className="tda">{user.userAge}</td>
+						<td className="td">{user.userSalary}</td>
+						<td className="td">
+							<div className='td-btn' >
+								<button className="edit-action button" onClick ={() => handleEditClick(user, index)}>Edit</button>
+								<button  className="remove-action button" onClick={() => handleRemoveClick(index)}>Delete</button>
+							</div>
+						</td>
+				    </tr>
 				  ))}
-					
-					
 				</tbody>
-
 			</table>
-			{/*  */}
 		</div>
-		    
 	</div>
-
   </div>
 </div>  
   )
